@@ -375,22 +375,22 @@ p {
 #services .service-item p.html-css {
   background: skyblue;
   height: 5px;
-  width: 75%;
+  width: 100%;
 }
 #services .service-item p.javascript {
   background: yellow;
   height: 5px;
-  width: 75%;
+  width: 95%;
 }
 #services .service-item p.firebase {
-  background: crimson;
-  height: 5px;
-  width: 50%;
-}
-#services .service-item p.git-github {
   background: peru;
   height: 5px;
-  width: 50%;
+  width: 60%;
+}
+#services .service-item p.git-github {
+  background: yellow;
+  height: 5px;
+  width: 90%;
 }
 #services .service-item div span {
   display: block;
