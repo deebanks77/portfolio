@@ -305,6 +305,7 @@ p {
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
+  padding-left: 10px;
 }
 
 #services .service-top {
@@ -317,85 +318,33 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.services h2 {
+  color: rgb(61, 61, 182);
 }
 
 #services .service-item {
-  position: relative;
-  flex-basis: 80%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-  background-image: url(img/img-1.png);
-  background-size: cover;
-  margin: 10px 5%;
-  z-index: 1;
-  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgb(210, 206, 206);
+  box-shadow: 0 0 10px rgb(210, 206, 206);
+  flex-basis: 45%;
+  margin: 1.5%;
 }
-
-#services .service-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(60deg, #29322c 0%, #485563 100%);
-  opacity: 0.9;
-  z-index: -1;
+#services .service-item .icon {
+  width: 50px;
+  height: 30px;
 }
-
-#services .service-bottom .icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-#services .service-item h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-/* #services .service-item p {
-  color: white;
-  text-align: left;
-  font-size: 1.3rem;
-  line-height: 1.9rem;
-} */
-
-#services .service-item div.percentage {
-  color: #fff;
-  width: 100%;
-}
-#services .service-item p.html-css {
-  background: skyblue;
-  height: 5px;
-  width: 100%;
-}
-#services .service-item p.javascript {
-  background: yellow;
-  height: 5px;
-  width: 95%;
-}
-#services .service-item p.firebase {
-  background: peru;
-  height: 5px;
-  width: 60%;
-}
-#services .service-item p.git-github {
-  background: yellow;
-  height: 5px;
-  width: 90%;
-}
-#services .service-item div span {
-  display: block;
-  font-size: 2rem;
-  margin-top: 1rem;
+#services .service-item .icon img {
+  object-fit: contain;
 }
 
 /* End of Services section */
@@ -405,7 +354,7 @@ p {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 #projects .all-projects {
@@ -668,6 +617,15 @@ p {
 }
 /* End keyframes */
 
+/* Media query for small tablet */
+@media screen and (min-width: 500px) {
+  #services .service-bottom .service-item {
+    flex-basis: 30%;
+    margin: 1.5%;
+  }
+}
+/* Media query for small tablet */
+
 /* Media query for Tablet */
 @media only screen and (min-width: 768px) {
   .cta {
@@ -686,8 +644,8 @@ p {
 
   /* Service section */
   #services .service-bottom .service-item {
-    flex-basis: 45%;
-    margin: 2.5%;
+    flex-basis: 22%;
+    margin: 1.5%;
   }
   /* End of Service section */
 
